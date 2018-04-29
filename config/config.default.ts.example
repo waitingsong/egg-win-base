@@ -1,0 +1,39 @@
+import { EggAppConfig, PowerPartial } from 'egg'
+import { readFileSync } from 'fs'
+import 'source-map-support/register'
+
+import { join } from '../app/shared/index'
+
+
+// for config.{env}.ts
+export type DefaultConfig = PowerPartial<EggAppConfig>
+
+export default (appInfo: EggAppConfig) => {
+  const config = <EggAppConfig> {}
+
+  // should change to your own for every new project!
+  config.keys = appInfo.name + '1234567890'
+
+  config.siteFile = {
+    '/favicon.ico': readFileSync(join(appInfo.baseDir, 'app/public/favicon.png')),
+  }
+
+  return config
+}
+
+
+
+declare module 'egg' {
+  export interface Application {
+    config: EggAppConfig
+  }
+}
+
+
+declare module 'egg' {
+  export interface AjaxResp {
+    err: number
+    dat?: null | any
+    msg?: string | null
+  }
+}
