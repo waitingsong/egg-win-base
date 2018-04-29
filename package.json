@@ -4,7 +4,7 @@
   "description": "egg boilerplate",
   "private": true,
   "dependencies": {
-    "egg": "^2.4.0",
+    "egg": "^2.7.1",
     "egg-di": "^1.1.0",
     "egg-scripts": "^2.6.0",
     "moment": "^2.21.0",
@@ -18,7 +18,7 @@
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
     "cheerio": "^1.0.0-rc.2",
-    "egg-bin": "^4.3.7",
+    "egg-bin": "^4.7.0",
     "egg-ci": "^1.8.0",
     "egg-mock": "^3.14.0",
     "eslint": "^4.19.0",
