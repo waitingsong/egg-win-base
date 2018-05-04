@@ -46,6 +46,7 @@
     "repo:init": "git config --local push.followTags true && git config --local core.hooksPath ./.githooks && git config --local remote.origin.prune true && git config --local remote.origin.tagopt \"--tags\" && git config --local remote.pushdefault origin && echo It may going for a long time. Plese wait... && npm i && ts-node .githooks/init.ts",
     "start": "egg-scripts start --daemon --title=node-server",
     "stop": "egg-scripts stop --title=node-server",
+    "tar": "sh .githooks/tar.sh",
     "test": "npm run tsc && npm run test-local",
     "test-local": "egg-bin test",
     "tsc": "tsc -p tsconfig.json",
