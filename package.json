@@ -36,6 +36,7 @@
     "bp:add": "git remote add bp https://github.com/waitingsong/egg-base",
     "bp:sync": "git fetch bp && git pull --no-edit bp master",
     "build": "npm run lint && npm run tsc && npm run jslint",
+    "build:tar": "npm run tsc && npm run tar",
     "ci": "npm run lint && npm run cov",
     "clean": "rimraf app/**/*.{js,map} test/**/*.{js,map} config/**/*.{js,map}",
     "cov": "egg-bin cov",
