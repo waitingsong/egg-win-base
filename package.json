@@ -8,6 +8,7 @@
     "egg-di": "^1.1.0",
     "egg-scripts": "^2.6.0",
     "moment": "^2.21.0",
+    "rxjs": "^6.2.0",
     "source-map-support": "^0.5.4"
   },
   "devDependencies": {
