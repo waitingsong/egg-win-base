@@ -21,7 +21,7 @@
   "include": [
     "app/**/*",
     "config/**/*",
-    "/*.ts",
+    "*.ts",
     "test/**/*.ts"
   ],
   "exclude": [
