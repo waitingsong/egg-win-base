@@ -7,7 +7,7 @@
     "egg": "^2.8.1",
     "egg-di": "^1.1.0",
     "egg-scripts": "^2.6.0",
-    "egg-win": "^0.4.2",
+    "egg-win": "^0.4.3",
     "moment": "^2.22.2",
     "rxjs": "^6.2.0",
     "source-map-support": "^0.5.6"
