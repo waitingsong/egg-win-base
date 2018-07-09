@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/cheerio": "^0.22.1",
     "@types/mocha": "^5.2.1",
-    "@types/node": "^10.3.1",
+    "@types/node": "latest",
     "@types/supertest": "^2.0.0",
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
@@ -27,7 +27,7 @@
     "rimraf": "^2.6.1",
     "tslint": "^5.10.0",
     "tslint-eslint-rules": "^5.3.1",
-    "typescript": "^2.9.1"
+    "typescript": "latest"
   },
   "engines": {
     "node": ">=8.10.0"
