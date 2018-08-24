@@ -4,7 +4,7 @@
   "description": "egg boilerplate",
   "private": true,
   "dependencies": {
-    "@types/node": "latest",
+    "@types/node": "*",
     "egg": "^2.10.0",
     "egg-di": "^1.1.0",
     "egg-scripts": "^2.6.0",
@@ -14,9 +14,9 @@
     "source-map-support": "^0.5.6"
   },
   "devDependencies": {
-    "@types/cheerio": "^0.22.8",
-    "@types/mocha": "^5.2.5",
-    "@types/supertest": "^2.0.5",
+    "@types/cheerio": "*",
+    "@types/mocha": "*",
+    "@types/supertest": "*",
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
     "cheerio": "^1.0.0-rc.2",
@@ -28,7 +28,7 @@
     "rimraf": "^2.6.1",
     "tslint": "^5.11.0",
     "tslint-eslint-rules": "^5.3.1",
-    "typescript": "latest"
+    "typescript": ">=2.9"
   },
   "engines": {
     "node": ">=8.10.0"
