@@ -10,7 +10,7 @@
     "abortcontroller-polyfill": "^1.1.9",
     "egg": "^2.10.0",
     "egg-di": "^1.1.0",
-    "egg-scripts": "^2.6.0",
+    "egg-scripts": "^2.9.1",
     "form-data": "^2.3.2",
     "moment": "^2.22.2",
     "node-fetch": "^2.2.0",
