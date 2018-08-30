@@ -18,6 +18,15 @@ export default (appInfo: EggAppConfig) => {
     '/favicon.ico': readFileSync(join(appInfo.baseDir, 'app/public/favicon.png')),
   }
 
+  // switch by plugin.ts:cors.enable
+  config.cors = {
+    origin: '*',
+    // allowMethods: 'DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT',
+    allowMethods: 'GET,HEAD,OPTIONS,POST',
+    maxAge: 600,
+  }
+
+
   return config
 }
 
