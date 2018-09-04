@@ -15,8 +15,8 @@
     "form-data": "^2.3.2",
     "moment": "^2.22.2",
     "node-fetch": "^2.2.0",
-    "rxjs": "^6.2.2",
-    "rxxfetch": "^1.7.0",
+    "rxjs": "^6.3.1",
+    "rxxfetch": "^1.8.0",
     "source-map-support": "^0.5.6"
   },
   "devDependencies": {
@@ -29,7 +29,7 @@
     "egg-bin": "^4.8.3",
     "egg-ci": "^1.8.0",
     "egg-mock": "^3.19.2",
-    "eslint": "^5.4.0",
+    "eslint": "^5.5.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.1",
     "tslint": "^5.11.0",
