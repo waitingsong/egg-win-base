@@ -12,7 +12,7 @@
     "egg-cors": "^2.1.2",
     "egg-di": "^1.2.0",
     "egg-scripts": "^2.10.0",
-    "egg-win": "^0.4.4",
+    "egg-win": "^0.5.0",
     "form-data": "^2.3.3",
     "moment": "^2.22.2",
     "node-fetch": "^2.3.0",
