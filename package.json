@@ -7,18 +7,18 @@
     "@types/form-data": "*",
     "@types/node": "*",
     "@types/node-fetch": "*",
-    "abortcontroller-polyfill": "^1.1.9",
-    "egg": "^2.11.2",
-    "egg-cors": "^2.1.0",
-    "egg-di": "^1.1.0",
-    "egg-scripts": "^2.9.1",
+    "abortcontroller-polyfill": "^1.2.1",
+    "egg": "^2.14.1",
+    "egg-cors": "^2.1.2",
+    "egg-di": "^1.2.0",
+    "egg-scripts": "^2.10.0",
     "egg-win": "^0.4.4",
-    "form-data": "^2.3.2",
+    "form-data": "^2.3.3",
     "moment": "^2.22.2",
-    "node-fetch": "^2.2.0",
-    "rxjs": "^6.3.1",
+    "node-fetch": "^2.3.0",
+    "rxjs": ">=6.3.0",
     "rxxfetch": "^1.10.0",
-    "source-map-support": "^0.5.6"
+    "source-map-support": "^0.5.9"
   },
   "devDependencies": {
     "@types/cheerio": "*",
@@ -28,14 +28,14 @@
     "autod-egg": "^1.1.0",
     "cheerio": "^1.0.0-rc.2",
     "egg-bin": "^4.9.0",
-    "egg-ci": "^1.9.2",
-    "egg-mock": "^3.19.2",
-    "eslint": "^5.5.0",
+    "egg-ci": "^1.10.0",
+    "egg-mock": "^3.20.1",
+    "eslint": "^5.10.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.1",
     "tslint": "^5.11.0",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": ">=2.9"
+    "typescript": ">=3.0"
   },
   "egg": {
     "framework": "egg-win"
