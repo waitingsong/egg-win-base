@@ -18,6 +18,10 @@ target/
 build/
 run/
 diff-dump/
+.mvn
+.factorypath
+nbproject/
+/www
 
 dbconfig.json
 
@@ -38,9 +42,22 @@ src/config.properties
 .tern-project
 
 
+# for gradle
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+
 # for oracle
 *.~pck
 
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
 
 
 # Specifies intentionally untracked files to ignore when using Git
@@ -48,6 +65,7 @@ src/config.properties
 
 *~
 *.sw[mnpcod]
+*.log
 *.tmp
 *.tmp.*
 log.txt
