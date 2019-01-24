@@ -16,8 +16,8 @@
     "form-data": "^2.3.3",
     "moment": "^2.22.2",
     "node-fetch": "^2.3.0",
-    "rxjs": ">=6.3.0",
-    "rxxfetch": "^1.10.0",
+    "rxjs": "^6.3.2",
+    "rxxfetch": "^1.11.1",
     "source-map-support": "^0.5.9"
   },
   "devDependencies": {
@@ -30,12 +30,10 @@
     "egg-bin": "^4.9.0",
     "egg-ci": "^1.10.0",
     "egg-mock": "^3.20.1",
-    "eslint": "^5.10.0",
     "mocha": "^5.2.0",
     "rimraf": "^2.6.1",
     "tslint": "^5.11.0",
-    "tslint-eslint-rules": "^5.4.0",
-    "typescript": ">=3.0"
+    "tslint-eslint-rules": "^5.4.0"
   },
   "engines": {
     "node": ">=8.10.0"
