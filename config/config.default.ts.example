@@ -2,7 +2,7 @@ import { EggAppConfig, PowerPartial } from 'egg'
 import { readFileSync } from 'fs'
 import 'source-map-support/register'
 
-import { join } from '../app/shared/index'
+import { join } from '@waiting/shared-core'
 
 
 // for config.{env}.ts
