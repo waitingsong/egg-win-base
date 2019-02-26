@@ -8,7 +8,7 @@ import 'source-map-support/register'
 export type DefaultConfig = PowerPartial<EggAppConfig>
 
 export default (appInfo: EggAppConfig) => {
-  const config = <EggAppConfig> {}
+  const config = <DefaultConfig> {}
 
   // should change to your own for every new project!
   config.keys = appInfo.name + '1234567890'

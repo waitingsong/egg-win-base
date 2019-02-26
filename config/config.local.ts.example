@@ -1,7 +1,8 @@
-import { DefaultConfig } from './config.default'
+import prodConfig from './config.prod'
+
 
 export default () => {
-  const config: DefaultConfig = {}
+  const config = prodConfig()
 
   return config
 }
