@@ -18,7 +18,7 @@
     "node-fetch": "^2.3.0",
     "rxjs": "^6.4.0",
     "rxrunscript": "^5.2.0",
-    "rxxfetch": "^1.11.4",
+    "rxxfetch": "^1.12.0",
     "source-map-support": "^0.5.9"
   },
   "devDependencies": {
