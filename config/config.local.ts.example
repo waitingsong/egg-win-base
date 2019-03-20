@@ -2,6 +2,9 @@ import prodConfig from './config.prod'
 
 
 export default () => {
+  // 允许自签发证书
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+
   const config = prodConfig()
 
   return config
