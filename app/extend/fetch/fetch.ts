@@ -1,3 +1,4 @@
+import nodefetch, { Headers } from 'node-fetch'
 import { throwError, Observable } from 'rxjs'
 import { map, tap } from 'rxjs/operators'
 import { get as rxget, post as rxpost, RxRequestInit } from 'rxxfetch'
@@ -22,8 +23,8 @@ export {
  * @returns Observable<AjaxResp<T>> 泛型T为 AjaxResp.dat 类型，默认 any
  */
 export function get<T = any>(url: string, init?: RxRequestInit) {
-  init = init ? { ...initialArgs, ...init } : { ...initialArgs }
-  return myajax<T>(url, init, 'get')
+  const args = parseArgs(init)
+  return myajax<T>(url, args, 'get')
 }
 
 
@@ -32,8 +33,8 @@ export function get<T = any>(url: string, init?: RxRequestInit) {
  * @returns Observable<AjaxResp<T>> 泛型T为 AjaxResp.dat 类型，默认 any
  */
 export function post<T = any>(url: string, init?: RxRequestInit): Observable<AjaxResp<T>> {
-  init = init ? { ...initialArgs, ...init } : { ...initialArgs }
-  return myajax<T>(url, init, 'post')
+  const args = parseArgs(init)
+  return myajax<T>(url, args, 'post')
 }
 
 
@@ -120,5 +121,19 @@ function myajax<T>(
   )
 
   return ret$
+}
+
+
+function parseArgs(args?: Partial<RxRequestInit>): RxRequestInit {
+  const base = <RxRequestInit> {
+    fetchModule: nodefetch,
+    headersInitClass: Headers,
+    ...initialArgs,
+  }
+  const ret: RxRequestInit = args
+    ? { ...base, ...args }
+    : { ...base }
+
+  return ret
 }
 
