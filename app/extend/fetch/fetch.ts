@@ -72,28 +72,20 @@ function parseRespState<T>(data: AjaxResp<T>): AjaxResp<T> {
 
 
 /** 分析请求结果 若异常则抛出异常 */
-function parseRespErr(data: AjaxResp): void {
+function parseRespErr(
+  url: string,
+  type: 'get' | 'post',
+  data: AjaxResp,
+): void {
+
   if (data.err) {
-    if (data.state === -1) { // session过期弹出验证密码弹窗
-      // options.notify && data.msg && UItoastr({ type: 'warning', title: '登录状态无效', msg: data.msg, timeOut: 10000 })
-
-      // @ts-ignore
-      $('#dialog_verification_login_password').modal('show')
-
-      // @FIXME
-      // @ts-ignore
-      DT.lock_worker && DT.lock_workedata.postMessage('stop')
-    }
-    else {
-      throw new Error(data.msg ? data.msg : 'Ajax Error without error message')
-    }
+    const msg = `Fetch Error:
+url: "${url}"
+schema: "${type.toUpperCase()}"
+message: "${data.msg ? data.msg : ''}"
+`
+    throw new Error(msg)
   }
-  // else {
-  //   if (typeof data.jump === 'string') {
-  //     window.location.href = data.jump
-  //     return
-  //   }
-  // }
 }
 
 
@@ -117,7 +109,7 @@ function myajax<T>(
 
   const ret$: Observable<AjaxResp<T>> = req$.pipe(
     map(parseRespState),
-    tap(parseRespErr),
+    tap(res => parseRespErr(url, type, res)),
   )
 
   return ret$
