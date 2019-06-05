@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "alwaysStrict": true,
-    "charset": "utf8",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
