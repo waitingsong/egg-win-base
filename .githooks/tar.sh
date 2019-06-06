@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
 
-name=$npm_package_name
-if [ -z name ];then
+pkgName=$npm_package_name
+if [ -z $pkgName ];then
   echo 'package name of package.json empty!'
   exit 1
 fi
 
-base=$(dirname $(readlink -f "$0"))
-target="../${name}.tar.gz"
+# https://stackoverflow.com/questions/1064499/how-to-list-all-git-tags
+ver=$( git tag -l "v*" --sort=-version:refname | head -n 1 )
+curDir=$(dirname $(readlink -f "$0"))
+appPath=$(dirname $curDir)
+target="../${pkgName}-${ver}.tar.gz"
 path=$(readlink -f "$target")
 
 time tar --totals -czpf $target --exclude=*.ts --exclude=*.swp *
